@@ -5,6 +5,7 @@ relations:
       namespace: default
       name: catalog-dependent-service-b
     type: ownedBy
+    source: something
 kind: Resource
 metadata:
   name: catalog-dependent-service-a
