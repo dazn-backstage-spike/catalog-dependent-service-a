@@ -4,7 +4,8 @@ relations:
       kind: resource
       namespace: default
       name: catalog-dependent-service-b
-    type: ownedBy
+    type: dependsOn
+    # This is not documented...
     source: something
 kind: Resource
 metadata:
