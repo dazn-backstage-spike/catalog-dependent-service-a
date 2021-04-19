@@ -6,6 +6,7 @@ metadata:
 spec:
   owner: dx
   type: service
+  lifecycle: production
   dependsOn:
     - catalog-dependent-service-b
-  system: artist-engagement-portal
+  system: example
