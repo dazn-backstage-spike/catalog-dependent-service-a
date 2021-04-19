@@ -1,14 +1,4 @@
 apiVersion: backstage.io/v1alpha1
-relations:
-  - target:
-      kind: resource
-      namespace: default
-      name: catalog-dependent-service-b
-    type: dependsOn
-    # This is not documented...
-    source:
-      kind: Resource
-      name: catalog-dependent-service-a
 kind: Resource
 metadata:
   name: catalog-dependent-service-a
@@ -16,4 +6,6 @@ metadata:
 spec:
   owner: dx
   type: service
+  dependsOn:
+    - catalog-dependent-service-b
   system: artist-engagement-portal
