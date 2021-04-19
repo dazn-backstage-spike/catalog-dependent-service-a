@@ -8,5 +8,5 @@ spec:
   type: service
   lifecycle: production
   dependsOn:
-    - catalog-dependent-service-b
+    - Component:catalog-dependent-service-b
   system: example
