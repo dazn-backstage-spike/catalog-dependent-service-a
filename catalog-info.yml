@@ -7,6 +7,19 @@ spec:
   owner: dx
   type: service
   lifecycle: production
-  dependsOn:
-    - Component:default/catalog-dependent-service-b
+  providesApis:
+    - catalog-dependent-service-a
   system: example
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: catalog-dependent-service-a
+  description: a demo api
+spec:
+  type: openapi
+  lifecycle: production
+  owner: dx
+  system: example
+  definition:
+    $text: ./open-api.yaml
