@@ -6,7 +6,8 @@ relations:
       name: catalog-dependent-service-b
     type: dependsOn
     # This is not documented...
-    # source: something
+    source:
+      prop: hello
 kind: Resource
 metadata:
   name: catalog-dependent-service-a
